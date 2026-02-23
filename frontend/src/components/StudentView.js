@@ -6,7 +6,7 @@ function StudentView() {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/api/events")
+    axios.get("https://prizeportal-student-production.up.railway/api/events")
       .then(response => {
         console.log("API data:", response.data); // debug to check data
         setEvents(response.data);
